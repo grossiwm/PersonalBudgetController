@@ -1,0 +1,11 @@
+.card {
+    margin: 30px auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.total-value{
+    font-weight: bold;
+}
+
+   

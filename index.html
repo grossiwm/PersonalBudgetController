@@ -1,0 +1,78 @@
+<html>
+<head>
+    <!-- HTML 4 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- HTML5 -->
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-hand-holding-usd"></i>
+          Orçamento de Nikiti
+        </a>
+    </nav>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Olá!</strong> Insira o gasto/mês de cada coisa abaixo.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+    </div>
+    <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Calculadora de orçamento</div>
+        <div class="card-body">
+            <form>
+            <!--        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Semanas em Niterói</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                          </div>-->
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Mercado</label>
+                  <input type="number" class="form-control mercado somavel" id="exampleFormControlInput1" placeholder="0,00" >
+                </div>
+
+                <div class="form-group">
+                        <label for="exampleFormControlInput1">Restaurante</label>
+                        <input type="number" class="form-control restaurante somavel" id="exampleFormControlInput1" placeholder="0,00">
+                </div>
+
+                <div class="form-group">
+                        <label for="exampleFormControlInput1">Aluguel</label>
+                        <input type="number" class="form-control aluguel somavel" id="exampleFormControlInput1" placeholder="0,00">
+                </div>
+
+                <div class="form-group">
+                        <label for="exampleFormControlInput1">Passagem</label>
+                        <input type="number" class="form-control passagem somavel" id="exampleFormControlInput1" placeholder="0,00">
+                </div>
+
+                <button type="button" class="btn btn-link"><i class="fas fa-plus cria-novo-campo">Novo campo</i></button>
+
+                <div class="form-group novo-campo">
+                        
+                </div>
+
+                <div class = "div-total""></div>
+                <br>
+                <button type="button" class="btn btn-primary calcula">Calcule</button>
+            
+              </form>
+        </div>  
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src = "soma.js"></script>
+<script src = "cria_campo.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
