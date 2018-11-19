@@ -4,8 +4,30 @@
     margin-bottom: 10px; /* Added */
 }
 
+.div-total{
+    margin-top:25px;
+}
+
 .total-value{
     font-weight: bold;
 }
+
+body {
+
+    background-image: url("./assets/background-bitcoin-blockchain-1036644.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.card {
+
+      background-color: rgba(245, 245, 245, 1);
+      opacity: .9;
+}
+
+/* .novo-campo{
+    visibility: hidden;
+} */
 
    

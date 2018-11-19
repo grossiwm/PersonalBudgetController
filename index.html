@@ -26,6 +26,7 @@
         <div class="card-header">Calculadora de orçamento</div>
         <div class="card-body">
             <form>
+                <div class="inputs">
             <!--        <div class="form-group">
                             <label for="exampleFormControlSelect1">Semanas em Niterói</label>
                             <select class="form-control" id="exampleFormControlSelect1">
@@ -35,36 +36,42 @@
                               <option>4</option>
                             </select>
                           </div>-->
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Mercado</label>
-                  <input type="number" class="form-control mercado somavel" id="exampleFormControlInput1" placeholder="0,00" >
-                </div>
+                    <div class="form-group">
+                    <label for="exampleFormControlInput1">Mercado</label>
+                    <input type="number" class="form-control mercado somavel" id="exampleFormControlInput1" placeholder="0.00" >
+                    </div>  
 
-                <div class="form-group">
-                        <label for="exampleFormControlInput1">Restaurante</label>
-                        <input type="number" class="form-control restaurante somavel" id="exampleFormControlInput1" placeholder="0,00">
-                </div>
+                    <div class="form-group">
+                            <label for="exampleFormControlInput1">Restaurante</label>
+                            <input type="number" class="form-control restaurante somavel" id="exampleFormControlInput1" placeholder="0.00">
+                    </div>
 
-                <div class="form-group">
-                        <label for="exampleFormControlInput1">Aluguel</label>
-                        <input type="number" class="form-control aluguel somavel" id="exampleFormControlInput1" placeholder="0,00">
-                </div>
+                    <div class="form-group">
+                            <label for="exampleFormControlInput1">Aluguel</label>
+                            <input type="number" class="form-control aluguel somavel" id="exampleFormControlInput1" placeholder="0.00">
+                    </div>
 
-                <div class="form-group">
-                        <label for="exampleFormControlInput1">Passagem</label>
-                        <input type="number" class="form-control passagem somavel" id="exampleFormControlInput1" placeholder="0,00">
+                    <div class="form-group">
+                            <label for="exampleFormControlInput1">Passagem</label>
+                            <input type="number" class="form-control passagem somavel" id="exampleFormControlInput1" placeholder="0.00">
+                    </div>
                 </div>
-
+                    
                 <button type="button" class="btn btn-link"><i class="fas fa-plus cria-novo-campo">Novo campo</i></button>
 
+                    
                 <div class="form-group novo-campo">
-                        
+                    <input type="text" class="form-control novo-campo-input " id="exampleFormControlInput1" placeholder="Nome do campo">
+                    <div class="alert alert-danger" role="alert">
+                            Insira o nome do campo!
+                    </div>
+                    <button type="button" class="btn btn-link commit">Criar agora</button> <button type="button" class="btn btn-link commit-cancel">Cancelar</button>
                 </div>
 
                 <div class = "div-total""></div>
                 <br>
                 <button type="button" class="btn btn-primary calcula">Calcule</button>
-            
+                
               </form>
         </div>  
     </div>

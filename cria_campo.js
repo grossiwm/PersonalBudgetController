@@ -1,16 +1,32 @@
+$(".novo-campo").hide();
+$(".novo-campo .alert").hide();
+
 $( ".cria-novo-campo" ).click(function() {
     console.log( "Botao 2 Funciona." ); 
     
-    $(".novo-campo").html(`
-    
-    <input type="text" class="form-control somavel" id="exampleFormControlInput1" placeholder="Nome do campo">
-    <button type="button" class="btn btn-link">Criar</button>
-    `);
+    $(".novo-campo").show();
 
 });
 
-$( ".cria-novo-campo-commit" ).click(function() {
-    console.log( "Botao 3 Funciona." ); 
-    
+$(".commit").click(function(){
+    var nome = $(".novo-campo-input").val();
+    var div = `
+        <div class="form-group">
+            <label for="exampleFormControlInput1">${nome}</label>
+            <input type="number" class="form-control passagem somavel" id="exampleFormControlInput1" placeholder="0.00">
+        </div>
+    `
+    if (!nome){
+        $(".novo-campo .alert").show();
+    }else{
+        $(".inputs").append(div);
+        $(".novo-campo .alert").hide();
+        $(".novo-campo").hide();
+        $(".novo-campo-input").val("");
+    }
+})
 
-});
+$(".commit-cancel").click(function(){
+    $(".novo-campo").hide();
+    $(".novo-campo .alert").hide();
+})
